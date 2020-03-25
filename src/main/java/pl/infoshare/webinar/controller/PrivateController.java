@@ -15,6 +15,7 @@ public class PrivateController {
     public String getPublic() {
         return "It's public";
     }
+
     @GetMapping("/api/private")
     public String getPrivate() {
         SecurityContext context = SecurityContextHolder.getContext();
